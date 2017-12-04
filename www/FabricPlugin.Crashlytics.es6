@@ -3,13 +3,13 @@ class FabricCrashlytics {
     constructor() {}
 
     addLog(message) {
-        window.fabric.core.execPlugin('addLog', [
+        window.cordovaFabricIoPlugin.core.execPlugin('addLog', [
             message
         ]);
     }
 
     sendCrash() {
-        window.fabric.core.execPlugin('sendCrash', [
+        window.cordovaFabricIoPlugin.core.execPlugin('sendCrash', [
         ]);
     }
 
@@ -33,57 +33,57 @@ class FabricCrashlytics {
             }
         }
 
-        window.fabric.core.execPlugin('sendNonFatalCrash', params);
+        window.cordovaFabricIoPlugin.core.execPlugin('sendNonFatalCrash', params);
     }
 
     recordError(message, code) {
-        window.fabric.core.execPlugin('recordError', [
+        window.cordovaFabricIoPlugin.core.execPlugin('recordError', [
             message,
             code
         ]);
     }
 
     setUserIdentifier(userIdentifier) {
-        window.fabric.core.execPlugin('setUserIdentifier', [
+        window.cordovaFabricIoPlugin.core.execPlugin('setUserIdentifier', [
             userIdentifier
         ]);
     }
 
     setUserName(userName) {
-        window.fabric.core.execPlugin('setUserName', [
+        window.cordovaFabricIoPlugin.core.execPlugin('setUserName', [
             userName
         ]);
     }
 
     setUserEmail(userEmail) {
-        window.fabric.core.execPlugin('setUserEmail', [
+        window.cordovaFabricIoPlugin.core.execPlugin('setUserEmail', [
             userEmail
         ]);
     }
 
     setStringValueForKey(value, key) {
-        window.fabric.core.execPlugin('setStringValueForKey', [
+        window.cordovaFabricIoPlugin.core.execPlugin('setStringValueForKey', [
             value,
             key
         ]);
     }
 
     setIntValueForKey(value, key) {
-        window.fabric.core.execPlugin('setIntValueForKey', [
+        window.cordovaFabricIoPlugin.core.execPlugin('setIntValueForKey', [
             value,
             key
         ]);
     }
 
     setBoolValueForKey(value, key) {
-        window.fabric.core.execPlugin('setBoolValueForKey', [
+        window.cordovaFabricIoPlugin.core.execPlugin('setBoolValueForKey', [
             value,
             key
         ]);
     }
 
     setFloatValueForKey(value, key) {
-        window.fabric.core.execPlugin('setFloatValueForKey', [
+        window.cordovaFabricIoPlugin.core.execPlugin('setFloatValueForKey', [
             value,
             key
         ]);

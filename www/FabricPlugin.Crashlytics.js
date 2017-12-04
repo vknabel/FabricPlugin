@@ -12,12 +12,12 @@ var FabricCrashlytics = (function () {
     _createClass(FabricCrashlytics, [{
         key: 'addLog',
         value: function addLog(message) {
-            window.fabric.core.execPlugin('addLog', [message]);
+            window.cordovaFabricIoPlugin.core.execPlugin('addLog', [message]);
         }
     }, {
         key: 'sendCrash',
         value: function sendCrash() {
-            window.fabric.core.execPlugin('sendCrash', []);
+            window.cordovaFabricIoPlugin.core.execPlugin('sendCrash', []);
         }
     }, {
         key: 'sendNonFatalCrash',
@@ -62,47 +62,47 @@ var FabricCrashlytics = (function () {
                 }
             }
 
-            window.fabric.core.execPlugin('sendNonFatalCrash', params);
+            window.cordovaFabricIoPlugin.core.execPlugin('sendNonFatalCrash', params);
         }
     }, {
         key: 'recordError',
         value: function recordError(message, code) {
-            window.fabric.core.execPlugin('recordError', [message, code]);
+            window.cordovaFabricIoPlugin.core.execPlugin('recordError', [message, code]);
         }
     }, {
         key: 'setUserIdentifier',
         value: function setUserIdentifier(userIdentifier) {
-            window.fabric.core.execPlugin('setUserIdentifier', [userIdentifier]);
+            window.cordovaFabricIoPlugin.core.execPlugin('setUserIdentifier', [userIdentifier]);
         }
     }, {
         key: 'setUserName',
         value: function setUserName(userName) {
-            window.fabric.core.execPlugin('setUserName', [userName]);
+            window.cordovaFabricIoPlugin.core.execPlugin('setUserName', [userName]);
         }
     }, {
         key: 'setUserEmail',
         value: function setUserEmail(userEmail) {
-            window.fabric.core.execPlugin('setUserEmail', [userEmail]);
+            window.cordovaFabricIoPlugin.core.execPlugin('setUserEmail', [userEmail]);
         }
     }, {
         key: 'setStringValueForKey',
         value: function setStringValueForKey(value, key) {
-            window.fabric.core.execPlugin('setStringValueForKey', [value, key]);
+            window.cordovaFabricIoPlugin.core.execPlugin('setStringValueForKey', [value, key]);
         }
     }, {
         key: 'setIntValueForKey',
         value: function setIntValueForKey(value, key) {
-            window.fabric.core.execPlugin('setIntValueForKey', [value, key]);
+            window.cordovaFabricIoPlugin.core.execPlugin('setIntValueForKey', [value, key]);
         }
     }, {
         key: 'setBoolValueForKey',
         value: function setBoolValueForKey(value, key) {
-            window.fabric.core.execPlugin('setBoolValueForKey', [value, key]);
+            window.cordovaFabricIoPlugin.core.execPlugin('setBoolValueForKey', [value, key]);
         }
     }, {
         key: 'setFloatValueForKey',
         value: function setFloatValueForKey(value, key) {
-            window.fabric.core.execPlugin('setFloatValueForKey', [value, key]);
+            window.cordovaFabricIoPlugin.core.execPlugin('setFloatValueForKey', [value, key]);
         }
     }]);
 

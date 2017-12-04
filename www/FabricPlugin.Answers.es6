@@ -3,7 +3,7 @@ class FabricAnswers {
     constructor() {}
 
     sendPurchase(itemPrice, currency, success, itemName, itemType, itemId, attributes) {
-        window.fabric.core.execPlugin('sendPurchase', [
+        window.cordovaFabricIoPlugin.core.execPlugin('sendPurchase', [
             itemPrice,
             currency,
             success,
@@ -15,7 +15,7 @@ class FabricAnswers {
     }
 
     sendAddToCart(itemPrice, currency, itemName, itemType, itemId, attributes) {
-        window.fabric.core.execPlugin('sendAddToCart', [
+        window.cordovaFabricIoPlugin.core.execPlugin('sendAddToCart', [
             itemPrice,
             currency,
             itemName,
@@ -26,7 +26,7 @@ class FabricAnswers {
     }
 
     sendStartCheckout(totalPrice, currency, itemCount, attributes) {
-        window.fabric.core.execPlugin('sendStartCheckout', [
+        window.cordovaFabricIoPlugin.core.execPlugin('sendStartCheckout', [
             totalPrice,
             currency,
             itemCount,
@@ -35,14 +35,14 @@ class FabricAnswers {
     }
 
     sendSearch(query, attributes) {
-        window.fabric.core.execPlugin('sendSearch', [
+        window.cordovaFabricIoPlugin.core.execPlugin('sendSearch', [
             query,
             attributes
         ]);
     }
 
     sendShare(method, contentName, contentType, contentId, attributes) {
-        window.fabric.core.execPlugin('sendShare', [
+        window.cordovaFabricIoPlugin.core.execPlugin('sendShare', [
             method,
             contentName,
             contentType,
@@ -52,7 +52,7 @@ class FabricAnswers {
     }
 
     sendRatedContent(rating, contentName, contentType, contentId, attributes) {
-        window.fabric.core.execPlugin('sendRatedContent', [
+        window.cordovaFabricIoPlugin.core.execPlugin('sendRatedContent', [
             rating,
             contentName,
             contentType,
@@ -62,7 +62,7 @@ class FabricAnswers {
     }
 
     sendSignUp(method, success, attributes) {
-        window.fabric.core.execPlugin('sendSignUp', [
+        window.cordovaFabricIoPlugin.core.execPlugin('sendSignUp', [
             method,
             success,
             attributes
@@ -70,7 +70,7 @@ class FabricAnswers {
     }
 
     sendLogIn(method, success, attributes) {
-        window.fabric.core.execPlugin('sendLogIn', [
+        window.cordovaFabricIoPlugin.core.execPlugin('sendLogIn', [
             method,
             success,
             attributes
@@ -78,21 +78,21 @@ class FabricAnswers {
     }
 
     sendInvite(method, attributes) {
-        window.fabric.core.execPlugin('sendInvite', [
+        window.cordovaFabricIoPlugin.core.execPlugin('sendInvite', [
             method,
             attributes
         ]);
     }
 
     sendLevelStart(levelName, attributes) {
-        window.fabric.core.execPlugin('sendLevelStart', [
+        window.cordovaFabricIoPlugin.core.execPlugin('sendLevelStart', [
             levelName,
             attributes
         ]);
     }
 
     sendLevelEnd(levelName, score, success, attributes) {
-        window.fabric.core.execPlugin('sendLevelEnd', [
+        window.cordovaFabricIoPlugin.core.execPlugin('sendLevelEnd', [
             levelName,
             score,
             success,
@@ -101,7 +101,7 @@ class FabricAnswers {
     }
 
     sendContentView(name, type, id, attributes) {
-        window.fabric.core.execPlugin('sendContentView', [
+        window.cordovaFabricIoPlugin.core.execPlugin('sendContentView', [
             name,
             type,
             id,
@@ -110,7 +110,7 @@ class FabricAnswers {
     }
 
     sendScreenView(name, id, attributes) {
-        window.fabric.core.execPlugin('sendContentView', [
+        window.cordovaFabricIoPlugin.core.execPlugin('sendContentView', [
             name,
             "Screen",
             id,
@@ -119,7 +119,7 @@ class FabricAnswers {
     }
 
     sendCustomEvent(name, attributes) {
-        window.fabric.core.execPlugin('sendCustomEvent', [
+        window.cordovaFabricIoPlugin.core.execPlugin('sendCustomEvent', [
             name,
             attributes
         ]);
