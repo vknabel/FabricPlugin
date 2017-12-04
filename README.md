@@ -42,23 +42,23 @@ Below are a few examples; see the API documentation for a complete list.
 ## Simulate a Native Crash
 
 ```javascript
-window.fabric.Crashlytics.addLog("about to send a crash for testing!");
-window.fabric.Crashlytics.sendCrash();
+window.fabricIO.Crashlytics.addLog("about to send a crash for testing!");
+window.fabricIO.Crashlytics.sendCrash();
 ```
 
 ## Send a Non Fatal Crash / Recording Errors
 
 ```javascript
 //Android and iOS
-window.fabric.Crashlytics.addLog("about to send a non fatal crash for testing!");
-window.fabric.Crashlytics.sendNonFatalCrash("Error message");
+window.fabricIO.Crashlytics.addLog("about to send a non fatal crash for testing!");
+window.fabricIO.Crashlytics.sendNonFatalCrash("Error message");
 
 //iOS only. Send message and error code
-window.fabric.Crashlytics.addLog("about to send a non fatal crash for testing!");
-window.fabric.Crashlytics.recordError("Error message", -1);
+window.fabricIO.Crashlytics.addLog("about to send a non fatal crash for testing!");
+window.fabricIO.Crashlytics.recordError("Error message", -1);
 
 //Android only. Send stack trace with non fatal crash (requires https://www.stacktracejs.com/)
-window.fabric.Crashlytics.sendNonFatalCrash("Error message", StackTrace.getSync());
+window.fabricIO.Crashlytics.sendNonFatalCrash("Error message", StackTrace.getSync());
 ```
 
 Issue Grouping
@@ -67,15 +67,15 @@ Crashes are grouped via stack trace analysis. Logged errors are grouped, instead
 
 ## Set Information for Crash Reports
 ```javascript
-window.fabric.Crashlytics.setUserIdentifier("123");
-window.fabric.Crashlytics.setUserName("Some Guy");
-window.fabric.Crashlytics.setUserEmail("some.guy@email.com");
-window.fabric.Crashlytics.setStringValueForKey("bar", "foo");
+window.fabricIO.Crashlytics.setUserIdentifier("123");
+window.fabricIO.Crashlytics.setUserName("Some Guy");
+window.fabricIO.Crashlytics.setUserEmail("some.guy@email.com");
+window.fabricIO.Crashlytics.setStringValueForKey("bar", "foo");
 ```
 
 ## Send a Sign Up Event
 ```javascript
-window.fabric.Answers.sendSignUp("Facebook", true);
+window.fabricIO.Answers.sendSignUp("Facebook", true);
 ```
 
 ## Send a Sign Up Event (with custom attributes)
@@ -85,12 +85,12 @@ var attributes = {
     bar: true,
 };
 
-window.fabric.Answers.sendSignUp("Facebook", true, attributes);
+window.fabricIO.Answers.sendSignUp("Facebook", true, attributes);
 ```
 
 ## Send a Add To Cart Event
 ```javascript
-window.fabric.Answers.sendAddToCart(29.95, "USD", "Foo Bar Shirt", "apparel", "123");
+window.fabricIO.Answers.sendAddToCart(29.95, "USD", "Foo Bar Shirt", "apparel", "123");
 ```
 
 # Notes

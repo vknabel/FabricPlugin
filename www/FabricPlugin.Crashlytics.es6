@@ -3,13 +3,13 @@ class FabricCrashlytics {
     constructor() {}
 
     addLog(message) {
-        window.fabric.core.execPlugin('addLog', [
+        window.fabricIO.core.execPlugin('addLog', [
             message
         ]);
     }
 
     sendCrash() {
-        window.fabric.core.execPlugin('sendCrash', [
+        window.fabricIO.core.execPlugin('sendCrash', [
         ]);
     }
 
@@ -33,57 +33,57 @@ class FabricCrashlytics {
             }
         }
 
-        window.fabric.core.execPlugin('sendNonFatalCrash', params);
+        window.fabricIO.core.execPlugin('sendNonFatalCrash', params);
     }
 
     recordError(message, code) {
-        window.fabric.core.execPlugin('recordError', [
+        window.fabricIO.core.execPlugin('recordError', [
             message,
             code
         ]);
     }
 
     setUserIdentifier(userIdentifier) {
-        window.fabric.core.execPlugin('setUserIdentifier', [
+        window.fabricIO.core.execPlugin('setUserIdentifier', [
             userIdentifier
         ]);
     }
 
     setUserName(userName) {
-        window.fabric.core.execPlugin('setUserName', [
+        window.fabricIO.core.execPlugin('setUserName', [
             userName
         ]);
     }
 
     setUserEmail(userEmail) {
-        window.fabric.core.execPlugin('setUserEmail', [
+        window.fabricIO.core.execPlugin('setUserEmail', [
             userEmail
         ]);
     }
 
     setStringValueForKey(value, key) {
-        window.fabric.core.execPlugin('setStringValueForKey', [
+        window.fabricIO.core.execPlugin('setStringValueForKey', [
             value,
             key
         ]);
     }
 
     setIntValueForKey(value, key) {
-        window.fabric.core.execPlugin('setIntValueForKey', [
+        window.fabricIO.core.execPlugin('setIntValueForKey', [
             value,
             key
         ]);
     }
 
     setBoolValueForKey(value, key) {
-        window.fabric.core.execPlugin('setBoolValueForKey', [
+        window.fabricIO.core.execPlugin('setBoolValueForKey', [
             value,
             key
         ]);
     }
 
     setFloatValueForKey(value, key) {
-        window.fabric.core.execPlugin('setFloatValueForKey', [
+        window.fabricIO.core.execPlugin('setFloatValueForKey', [
             value,
             key
         ]);
