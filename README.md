@@ -42,23 +42,23 @@ Below are a few examples; see the API documentation for a complete list.
 ## Simulate a Native Crash
 
 ```javascript
-window.cordovaFabricIoPlugin.Crashlytics.addLog("about to send a crash for testing!");
-window.cordovaFabricIoPlugin.Crashlytics.sendCrash();
+window.cordovaPluginFabric.Crashlytics.addLog("about to send a crash for testing!");
+window.cordovaPluginFabric.Crashlytics.sendCrash();
 ```
 
 ## Send a Non Fatal Crash / Recording Errors
 
 ```javascript
 //Android and iOS
-window.cordovaFabricIoPlugin.Crashlytics.addLog("about to send a non fatal crash for testing!");
-window.cordovaFabricIoPlugin.Crashlytics.sendNonFatalCrash("Error message");
+window.cordovaPluginFabric.Crashlytics.addLog("about to send a non fatal crash for testing!");
+window.cordovaPluginFabric.Crashlytics.sendNonFatalCrash("Error message");
 
 //iOS only. Send message and error code
-window.cordovaFabricIoPlugin.Crashlytics.addLog("about to send a non fatal crash for testing!");
-window.cordovaFabricIoPlugin.Crashlytics.recordError("Error message", -1);
+window.cordovaPluginFabric.Crashlytics.addLog("about to send a non fatal crash for testing!");
+window.cordovaPluginFabric.Crashlytics.recordError("Error message", -1);
 
 //Android only. Send stack trace with non fatal crash (requires https://www.stacktracejs.com/)
-window.cordovaFabricIoPlugin.Crashlytics.sendNonFatalCrash("Error message", StackTrace.getSync());
+window.cordovaPluginFabric.Crashlytics.sendNonFatalCrash("Error message", StackTrace.getSync());
 ```
 
 Issue Grouping
@@ -67,15 +67,15 @@ Crashes are grouped via stack trace analysis. Logged errors are grouped, instead
 
 ## Set Information for Crash Reports
 ```javascript
-window.cordovaFabricIoPlugin.Crashlytics.setUserIdentifier("123");
-window.cordovaFabricIoPlugin.Crashlytics.setUserName("Some Guy");
-window.cordovaFabricIoPlugin.Crashlytics.setUserEmail("some.guy@email.com");
-window.cordovaFabricIoPlugin.Crashlytics.setStringValueForKey("bar", "foo");
+window.cordovaPluginFabric.Crashlytics.setUserIdentifier("123");
+window.cordovaPluginFabric.Crashlytics.setUserName("Some Guy");
+window.cordovaPluginFabric.Crashlytics.setUserEmail("some.guy@email.com");
+window.cordovaPluginFabric.Crashlytics.setStringValueForKey("bar", "foo");
 ```
 
 ## Send a Sign Up Event
 ```javascript
-window.cordovaFabricIoPlugin.Answers.sendSignUp("Facebook", true);
+window.cordovaPluginFabric.Answers.sendSignUp("Facebook", true);
 ```
 
 ## Send a Sign Up Event (with custom attributes)
@@ -85,12 +85,12 @@ var attributes = {
     bar: true,
 };
 
-window.cordovaFabricIoPlugin.Answers.sendSignUp("Facebook", true, attributes);
+window.cordovaPluginFabric.Answers.sendSignUp("Facebook", true, attributes);
 ```
 
 ## Send a Add To Cart Event
 ```javascript
-window.cordovaFabricIoPlugin.Answers.sendAddToCart(29.95, "USD", "Foo Bar Shirt", "apparel", "123");
+window.cordovaPluginFabric.Answers.sendAddToCart(29.95, "USD", "Foo Bar Shirt", "apparel", "123");
 ```
 
 # Notes

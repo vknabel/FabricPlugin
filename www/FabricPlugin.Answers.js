@@ -12,72 +12,72 @@ var FabricAnswers = (function () {
     _createClass(FabricAnswers, [{
         key: 'sendPurchase',
         value: function sendPurchase(itemPrice, currency, success, itemName, itemType, itemId, attributes) {
-            window.cordovaFabricIoPlugin.core.execPlugin('sendPurchase', [itemPrice, currency, success, itemName, itemType, itemId, attributes]);
+            window.cordovaPluginFabric.core.execPlugin('sendPurchase', [itemPrice, currency, success, itemName, itemType, itemId, attributes]);
         }
     }, {
         key: 'sendAddToCart',
         value: function sendAddToCart(itemPrice, currency, itemName, itemType, itemId, attributes) {
-            window.cordovaFabricIoPlugin.core.execPlugin('sendAddToCart', [itemPrice, currency, itemName, itemType, itemId, attributes]);
+            window.cordovaPluginFabric.core.execPlugin('sendAddToCart', [itemPrice, currency, itemName, itemType, itemId, attributes]);
         }
     }, {
         key: 'sendStartCheckout',
         value: function sendStartCheckout(totalPrice, currency, itemCount, attributes) {
-            window.cordovaFabricIoPlugin.core.execPlugin('sendStartCheckout', [totalPrice, currency, itemCount, attributes]);
+            window.cordovaPluginFabric.core.execPlugin('sendStartCheckout', [totalPrice, currency, itemCount, attributes]);
         }
     }, {
         key: 'sendSearch',
         value: function sendSearch(query, attributes) {
-            window.cordovaFabricIoPlugin.core.execPlugin('sendSearch', [query, attributes]);
+            window.cordovaPluginFabric.core.execPlugin('sendSearch', [query, attributes]);
         }
     }, {
         key: 'sendShare',
         value: function sendShare(method, contentName, contentType, contentId, attributes) {
-            window.cordovaFabricIoPlugin.core.execPlugin('sendShare', [method, contentName, contentType, contentId, attributes]);
+            window.cordovaPluginFabric.core.execPlugin('sendShare', [method, contentName, contentType, contentId, attributes]);
         }
     }, {
         key: 'sendRatedContent',
         value: function sendRatedContent(rating, contentName, contentType, contentId, attributes) {
-            window.cordovaFabricIoPlugin.core.execPlugin('sendRatedContent', [rating, contentName, contentType, contentId, attributes]);
+            window.cordovaPluginFabric.core.execPlugin('sendRatedContent', [rating, contentName, contentType, contentId, attributes]);
         }
     }, {
         key: 'sendSignUp',
         value: function sendSignUp(method, success, attributes) {
-            window.cordovaFabricIoPlugin.core.execPlugin('sendSignUp', [method, success, attributes]);
+            window.cordovaPluginFabric.core.execPlugin('sendSignUp', [method, success, attributes]);
         }
     }, {
         key: 'sendLogIn',
         value: function sendLogIn(method, success, attributes) {
-            window.cordovaFabricIoPlugin.core.execPlugin('sendLogIn', [method, success, attributes]);
+            window.cordovaPluginFabric.core.execPlugin('sendLogIn', [method, success, attributes]);
         }
     }, {
         key: 'sendInvite',
         value: function sendInvite(method, attributes) {
-            window.cordovaFabricIoPlugin.core.execPlugin('sendInvite', [method, attributes]);
+            window.cordovaPluginFabric.core.execPlugin('sendInvite', [method, attributes]);
         }
     }, {
         key: 'sendLevelStart',
         value: function sendLevelStart(levelName, attributes) {
-            window.cordovaFabricIoPlugin.core.execPlugin('sendLevelStart', [levelName, attributes]);
+            window.cordovaPluginFabric.core.execPlugin('sendLevelStart', [levelName, attributes]);
         }
     }, {
         key: 'sendLevelEnd',
         value: function sendLevelEnd(levelName, score, success, attributes) {
-            window.cordovaFabricIoPlugin.core.execPlugin('sendLevelEnd', [levelName, score, success, attributes]);
+            window.cordovaPluginFabric.core.execPlugin('sendLevelEnd', [levelName, score, success, attributes]);
         }
     }, {
         key: 'sendContentView',
         value: function sendContentView(name, type, id, attributes) {
-            window.cordovaFabricIoPlugin.core.execPlugin('sendContentView', [name, type, id, attributes]);
+            window.cordovaPluginFabric.core.execPlugin('sendContentView', [name, type, id, attributes]);
         }
     }, {
         key: 'sendScreenView',
         value: function sendScreenView(name, id, attributes) {
-            window.cordovaFabricIoPlugin.core.execPlugin('sendContentView', [name, "Screen", id, attributes]);
+            window.cordovaPluginFabric.core.execPlugin('sendContentView', [name, "Screen", id, attributes]);
         }
     }, {
         key: 'sendCustomEvent',
         value: function sendCustomEvent(name, attributes) {
-            window.cordovaFabricIoPlugin.core.execPlugin('sendCustomEvent', [name, attributes]);
+            window.cordovaPluginFabric.core.execPlugin('sendCustomEvent', [name, attributes]);
         }
     }]);
 
